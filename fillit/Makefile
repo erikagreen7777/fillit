@@ -12,7 +12,7 @@
 NAME = fillit
 SRCDIR = ./srcs/
 LIBDIR = ./libft/
-FILE_1 = main valid 
+FILE_1 = main valid mod
 # FILE_2 = row_adjust save_tets del_list clear_tets find_pos 
 # FILE_3 = insert_newlines tet_reset replace backtrack check_pos clean_map
 # FILE_4 = next_piece map_reset

@@ -18,6 +18,7 @@ typedef struct		m_list
 	struct s_list	*next;
 }					l_list;
 
-int				validate(char *argv);
+int				valid(char *argv);
+int				ft_mod(int a, int b);
 
 #endif

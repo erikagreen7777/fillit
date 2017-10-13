@@ -26,8 +26,9 @@ int	main(int argc, char **argv)
 			write(1, "error\n", 6);
 		ft_bzero(buf, 601);
 		read(fd, buf, 600);
-		printf("This is in the buffer: %s\n", buf); //WHY IS IT MESSED UP???
-		// write(1, argv[1], (strlen(argv[1]))); //TWO DOTs ARE WRITTEN AFTER
+		// write(1, buf, 600);
+		// printf("This is in the buffer: %s\n", buf); 
+		valid(buf);
 		close(fd);
 	}
 	else
