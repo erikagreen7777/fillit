@@ -58,7 +58,7 @@ int		valid(char *buf)
 
 
 	str = ft_split(str);
-	printf("%s\n", str);
+	// printf("%s\n", );
 
 
 
