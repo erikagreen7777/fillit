@@ -65,9 +65,13 @@ SRC = ft_atoi.c \
 	  ft_strncpy.c \
 	  ft_intlen.c \
 	  ft_strrev.c \
-	  ft_strsplit.c
-
-	  
+	  ft_strsplit.c \
+	  ft_lstadd.c \
+	  ft_lstdel.c \
+	  ft_lstdelone.c \
+	  ft_lstiter.c \
+	  ft_lstmap.c \
+	  ft_lstnew.c
 
 OBJ = $(SRC:.c=.o)
 
@@ -91,4 +95,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY : re fclean clean
+.PHONY: re fclean clean

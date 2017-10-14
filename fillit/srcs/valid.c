@@ -1,3 +1,4 @@
+#include "libft.h"
 #include "fillit.h"
 
 int		valid(char *buf)

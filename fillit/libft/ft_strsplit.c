@@ -6,13 +6,13 @@
 /*   By: egreen <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/01 08:52:49 by egreen            #+#    #+#             */
-/*   Updated: 2017/10/04 18:02:15 by egreen           ###   ########.fr       */
+/*   Updated: 2017/10/06 09:10:12 by egreen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	ft_count_words(const char *s, char c)
+static size_t	ft_indexfinder(const char *s, char c)
 {
 	size_t	count;
 
@@ -32,27 +32,27 @@ static size_t	ft_count_words(const char *s, char c)
 
 char			**ft_strsplit(const char *s, char c)
 {
-	size_t	current_word;
-	size_t	word_count;
+	size_t	curr;
+	size_t	wrdct;
 	char	**words;
 	char	*next;
 
-	word_count = ft_count_words(s, c);
-	words = (char **)ft_memalloc(sizeof(char*) * (word_count + 1));
+	wrdct = ft_indexfinder(s, c);
+	words = (char **)ft_memalloc(sizeof(char*) * (wrdct + 1));
 	if (!words)
 		return (NULL);
-	current_word = 0;
-	while (current_word < word_count)
+	curr = 0;
+	while (curr < wrdct)
 	{
 		while (*s == c)
 			++s;
 		next = ft_strchr(s, c);
 		if (next)
-			words[current_word] = ft_strsub(s, 0, next - s);
+			words[curr] = ft_strsub(s, 0, next - s);
 		else
-			words[current_word] = ft_strdup(s);
+			words[curr] = ft_strdup(s);
 		s = next;
-		++current_word;
+		++curr;
 	}
 	return (words);
 }

@@ -6,16 +6,16 @@
 /*   By: egreen <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/21 08:30:52 by egreen            #+#    #+#             */
-/*   Updated: 2017/10/04 16:10:46 by egreen           ###   ########.fr       */
+/*   Updated: 2017/10/06 09:09:06 by egreen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int		ft_digits(int n)
+static int	ft_digits(int n)
 {
-	int		len;
-	long	n_cpy;
+	int			len;
+	long		n_cpy;
 
 	len = 0;
 	n_cpy = (long)n;

@@ -9,18 +9,19 @@
 
 # define ROW_SIZE 4
 
-typedef struct		m_list
+typedef struct		s_yourmom
 {
-	int				*ind;
-	int				*offset;
-	int				label;
-	struct s_list	*prev;
-	struct s_list	*next;
-}					l_list;
+	char				*fragment;
+	struct s_yourmom	*node;
+	struct s_yourmom	*next;
+}					t_yourmom;
 
 int				valid(char *argv);
 int				ft_ismod(int a, int b);
 char 			*ft_remove_newline(char *str);
 char 			*ft_split(const char *str);
+t_yourmom		*ft_list_assign(const char *str);
+t_yourmom		*ft_lstnew(void const *content, size_t content_size);
+void			ft_lstadd(t_yourmom **alst, t_yourmom *new);
 
 #endif

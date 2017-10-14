@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "libft.h"
+#include "fillit.h"
 
 char 	*ft_split(const char *str)
 {
@@ -14,10 +15,13 @@ char 	*ft_split(const char *str)
 	while (len > 0)
 	{
 		fragments[j] = *ft_strncpy(fragments, &str[i], 16);
+		ft_list_assign(str);
 		printf("%s\n", fragments);
 		len -= 16;
 		i+=16;
 		j++;
 	}
+	printf("This is the last fragments: %s\n", fragments);
+	
 	return (0);
 }
