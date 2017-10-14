@@ -19,6 +19,8 @@ typedef struct		m_list
 }					l_list;
 
 int				valid(char *argv);
-int				ft_mod(int a, int b);
+int				ft_ismod(int a, int b);
+char 			*ft_remove_newline(char *str);
+char 			*ft_split(const char *str);
 
 #endif

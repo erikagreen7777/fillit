@@ -6,17 +6,17 @@
 #    By: egreen <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/10/11 15:32:56 by egreen            #+#    #+#              #
-#    Updated: 2017/10/11 16:24:57 by egreen           ###   ########.fr        #
+#    Updated: 2017/10/13 17:06:45 by egreen           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 NAME = fillit
 SRCDIR = ./srcs/
 LIBDIR = ./libft/
-FILE_1 = main valid mod
-# FILE_2 = row_adjust save_tets del_list clear_tets find_pos 
+FILE_1 = main valid mod ft_remove_newline
+FILE_2 = ft_split 
 # FILE_3 = insert_newlines tet_reset replace backtrack check_pos clean_map
 # FILE_4 = next_piece map_reset
-FILES = $(FILE_1) 
+FILES = $(FILE_1) $(FILE_2) 
 # $(FILE_2) $(FILE_3) $(FILE_4)
 HEADERS = libft.h fillit.h
 SRCS = $(addprefix $(SRCDIR), $(patsubst %, %.c, $(FILES)))
