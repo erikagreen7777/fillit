@@ -1,28 +1,19 @@
-#include "libft.h"
-#include "fillit.h"
-#include <stdio.h>
+// #include "libft.h"
+// #include "fillit.h"
+// #include <stdio.h>
 
-// t_yourmom		*ft_list_assign(const char *str)
+// void		*ft_list_assign(char *fragments)
 // {
-// 	t_yourmom 	*tet = ft_memalloc(sizeof(t_yourmom));
-// 	tet->fragment = ft_strnew(16);	
+// 	t_tet_frag *ptr;
+// 	t_tet_frag *array;
 
-// 	if (tet->node == NULL)
-// 	{
-// 		ft_strcpy(tet->fragment, str);
-// 		printf("New list added:\n");
-// 	}
-// 	else
-// 	{
-// 		ft_lstadd(&tet->node, tet);
-// 		printf("node added: \n");
-// 		tet->node = tet;
-// 	}
-// 	while (tet->node->next)
-// 	{
-// 		printf(">>%s<<\n", tet->node->fragment);
-// 		tet->node = tet->node->next;
-// 	}
-// 	return (tet->node);
+// 	ptr = NULL;
+// 	array = ft_memalloc(sizeof(array));
+// 	if ((ft_lstnew(fragments, sizeof(fragments))))
+// 		ft_lstnew()
+// 	// ptr->next = NULL;
+// 	// ptr->array = 
+// 	printf("This is the array: %ld\n", ptr-array);
+// 	return (0);
 // }
 
