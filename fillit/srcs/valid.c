@@ -20,11 +20,12 @@ int		valid(char *buf)
 	printf("%zu\n",len);
 	//checking the overall length
 	if (len > 416 || len < 20)
-		printf("The length is invalid\n");
+		return(printf("The length is invalid\n"));
 	else
 		printf("The length is fine\n");
 	
-
+	if (len % 2 != 0)
+		return (printf("error\n"));
 	//checking whether the newlines are in the right place
 	while (i < (len - 1))
 	{
