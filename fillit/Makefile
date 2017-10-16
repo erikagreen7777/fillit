@@ -6,14 +6,14 @@
 #    By: egreen <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/10/11 15:32:56 by egreen            #+#    #+#              #
-#    Updated: 2017/10/14 11:02:37 by egreen           ###   ########.fr        #
+#    Updated: 2017/10/16 08:39:01 by egreen           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 NAME = fillit
 SRCDIR = ./srcs/
 LIBDIR = ./libft/
 FILE_1 = main valid mod ft_remove_newline
-FILE_2 = ft_split ft_list_assign 
+FILE_2 = ft_split ft_list_assign ft_strndup 
 # FILE_3 = insert_newlines tet_reset replace backtrack check_pos clean_map
 # FILE_4 = next_piece map_reset
 FILES = $(FILE_1) $(FILE_2) 
