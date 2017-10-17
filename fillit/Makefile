@@ -12,8 +12,8 @@
 NAME = fillit
 SRCDIR = ./srcs/
 LIBDIR = ./libft/
-FILE_1 = main valid mod ft_remove_newline
-FILE_2 = ft_split ft_list_assign ft_strndup 
+FILE_1 = main valid mod ft_remove_newline check_20_new
+FILE_2 = ft_split ft_list_assign ft_strndup check_4_new
 # FILE_3 = insert_newlines tet_reset replace backtrack check_pos clean_map
 # FILE_4 = next_piece map_reset
 FILES = $(FILE_1) $(FILE_2) 

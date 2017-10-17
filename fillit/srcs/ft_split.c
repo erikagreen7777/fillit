@@ -2,15 +2,17 @@
 #include "libft.h"
 #include "fillit.h"
 
-char 	*ft_split(const char *str)
+char 	**ft_split(const char *str)
 {
 	size_t len = ft_strlen(str);
-	char *fragments = ft_memalloc(16);
-	fragments = ft_strnew(sizeof(str + 1));
+	//char *fragments = ft_memalloc(16);
+	char **fragments;
+
+	fragments = (char **)ft_memalloc(sizeof(char *) * 27);
 	// size_t j = 0;
 	size_t i = 0;
 
-	ft_bzero(fragments, sizeof(str + 1));
+	// If none of them are # or .
 	while (i < len)
 	{
 		if (str[i] != '#' && str[i] != '.')
@@ -21,7 +23,11 @@ char 	*ft_split(const char *str)
 		printf("This char is valid: %zu %c\n", i, str[i]);
 		i++;
 	}
+
+
+	// Chop up the lines
 	i = 0;
+	int j = 0;
 	while (len > 0)
 	{
 		// if (i < len)
@@ -38,18 +44,22 @@ char 	*ft_split(const char *str)
 		// ft_list_assign(&fragments[j]);
 		// arr[k] = *ft_strcpy(arr, &fragments[j]);
 		// printf("%c\n", arr[k]);
-		fragments = (char *)ft_memcpy(fragments, &str[i], 16);
-
-		printf("array: %s\n",fragments);
+		//fragments = (char *)ft_memcpy(fragments, &str[i], 16);
+		fragments[i] = ft_strnew(16);
+		ft_strncpy(fragments[i], &str[j], 16);
+		ft_putstr("array: ");
+		ft_putendl(fragments[i]);
 		len -= 16;
-		i+=16;
+		i++;
+		j += 16;
 		// k++;
 	}
+	fragments[i] = NULL;
 	// while (arr[k])
 	// {
 	// 	printf("%s\n", arr[k]);
 	// 	k++;
 	// }
 	
-	return (0);
+	return (fragments);
 }
