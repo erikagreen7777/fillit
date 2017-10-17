@@ -2,7 +2,7 @@
 #include "libft.h"
 #include "fillit.h"
 
-char 	**ft_split(const char *str)
+char 	**ft_split(char *str)
 {
 	size_t len = ft_strlen(str);
 	//char *fragments = ft_memalloc(16);
@@ -30,6 +30,23 @@ char 	**ft_split(const char *str)
 	int j = 0;
 	while (len > 0)
 	{
+		// check_20_newlines(str);
+		// check_4_newlines(str);
+		fragments[i] = ft_strnew(16);
+		ft_strncpy(fragments[i], &str[j], 16);
+		ft_putstr("array: ");
+		// printf("array[%zu]: ", i);
+		ft_putendl(fragments[i]);
+		len -= 16;
+		i++;
+		j += 16;
+	}
+	fragments[i] = NULL;
+	return (fragments);
+}
+
+
+
 		// if (i < len)
 		// {
 		// 	fragments[j] = *ft_strndup(&str[i], 16);
@@ -45,21 +62,8 @@ char 	**ft_split(const char *str)
 		// arr[k] = *ft_strcpy(arr, &fragments[j]);
 		// printf("%c\n", arr[k]);
 		//fragments = (char *)ft_memcpy(fragments, &str[i], 16);
-		fragments[i] = ft_strnew(16);
-		ft_strncpy(fragments[i], &str[j], 16);
-		ft_putstr("array: ");
-		ft_putendl(fragments[i]);
-		len -= 16;
-		i++;
-		j += 16;
-		// k++;
-	}
-	fragments[i] = NULL;
 	// while (arr[k])
 	// {
 	// 	printf("%s\n", arr[k]);
 	// 	k++;
 	// }
-	
-	return (fragments);
-}
