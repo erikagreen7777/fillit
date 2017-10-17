@@ -20,8 +20,20 @@ int		valid(char *buf)
 		return(printf("Error: invalid file (length)\n"));
 	else
 		printf("The length is fine\n");
-
 	ft_putendl(str);	
+
+	
+	if ((str[len - 1]) == '\n' && (str[len - 2] == '\n'))
+		return(printf("Error: last char isn't a newline\n"));
+	
+	// while (i < len)
+	// {
+
+	// 	i += 21;
+	// }
+
+
+
 
 // remove the newlines from the whole thing.
 	str = ft_remove_newline(str);
@@ -35,9 +47,8 @@ int		valid(char *buf)
 
 	char **tet;
 	int j = -1;
-//	
+	
 	tet = ft_split(str);
-
 	while (tet[++j])
 	{
 		ft_putstr("YESSS");

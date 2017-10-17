@@ -5,11 +5,9 @@
 char 	**ft_split(char *str)
 {
 	size_t len = ft_strlen(str);
-	//char *fragments = ft_memalloc(16);
 	char **fragments;
 
 	fragments = (char **)ft_memalloc(sizeof(char *) * 27);
-	// size_t j = 0;
 	size_t i = 0;
 
 	// If none of them are # or .
@@ -24,18 +22,15 @@ char 	**ft_split(char *str)
 		i++;
 	}
 
-
 	// Chop up the lines
 	i = 0;
 	int j = 0;
 	while (len > 0)
 	{
-		// check_20_newlines(str);
-		// check_4_newlines(str);
 		fragments[i] = ft_strnew(16);
 		ft_strncpy(fragments[i], &str[j], 16);
 		ft_putstr("array: ");
-		// printf("array[%zu]: ", i);
+
 		ft_putendl(fragments[i]);
 		len -= 16;
 		i++;
@@ -67,3 +62,8 @@ char 	**ft_split(char *str)
 	// 	printf("%s\n", arr[k]);
 	// 	k++;
 	// }
+	//char *fragments = ft_memalloc(16);
+	// size_t j = 0;
+		// check_20_newlines(str);
+		// check_4_newlines(str);
+		// printf("array[%zu]: ", i);
