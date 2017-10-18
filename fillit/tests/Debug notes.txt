@@ -27,8 +27,8 @@ FIXED error21 - passes and it shouldn't
 error22 - passes and it shouldn't
 	5 lines for first tet and 3 for second
 
-error24 - passes and it shouldn't
-	two \n separating instead of one
+FIXEDerror24 - passes and it shouldn't
+	FIXEDtwo \n separating instead of one
 
 error26 - passes and it shouldn't
 	empty tet (no hashes)

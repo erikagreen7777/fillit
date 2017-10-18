@@ -30,6 +30,8 @@ int		valid(char *buf)
 	{
 		if (str[i] != '\n')
 			return(printf("Error: No newline at str[20]"));
+		if (str[i + 1] == '\n')
+			return(printf("Error: str[21] shouldn't be a newline"));
 		i += 21;
 	}
 
