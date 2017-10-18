@@ -3,19 +3,19 @@ Debug notes
 FIXED error3 - passes and it shouldn't
 	FIXED \n at the end?
 
-error4 - seg fault
+*error4 - seg fault
 	not all hashes are present and adjacent
 
-error7 - passes and it shouldn't
+*error7 - passes and it shouldn't
 	hashes aren't in the right order (not adjacent)
 
-error17 - passes and it shouldn't
+*error17 - passes and it shouldn't
 	hashes aren't in the right order (not adjacent)
 
-error18 - passes and it shouldn't
+*error18 - passes and it shouldn't
 	hashes aren't in the right order (not adjacent)
 
-error19 - passes and it shouldn't
+*error19 - passes and it shouldn't
 	hashes aren't in the right order (not adjacent)
 
 FIXED error20 - passes and it shouldn't
@@ -24,11 +24,12 @@ FIXED error20 - passes and it shouldn't
 FIXED error21 - passes and it shouldn't
 	FIXED no \n separating second and third tet
 
-error22 - passes and it shouldn't
-	5 lines for first tet and 3 for second
+FIXED error22 - passes and it shouldn't
+	FIXED 5 lines for first tet and 3 for second
+	THE FIRST CHAR ISN'T A . OR #
 
 FIXEDerror24 - passes and it shouldn't
 	FIXEDtwo \n separating instead of one
 
-error26 - passes and it shouldn't
+*error26 - passes and it shouldn't
 	empty tet (no hashes)

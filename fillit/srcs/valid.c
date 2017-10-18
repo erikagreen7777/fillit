@@ -35,6 +35,9 @@ int		valid(char *buf)
 		i += 21;
 	}
 
+	if ((str[0] != '.') && (str[0] != '#'))
+		return(printf("The first char isn't valid"));
+
 
 
 
