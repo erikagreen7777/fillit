@@ -9,9 +9,12 @@ int		valid(char *buf)
 	size_t len;
 	char *str;
 
+
 	i = 20;
+
 	str = buf;
 	len = ft_strlen(str);
+
 
 	printf("%zu\n",len);
 
@@ -39,8 +42,6 @@ int		valid(char *buf)
 		return(printf("The first char isn't valid"));
 
 
-
-
 // remove the newlines from the whole thing.
 	str = ft_remove_newline(str);
 	ft_putendl(str);
@@ -53,12 +54,14 @@ int		valid(char *buf)
 
 	char **tet;
 	int j = -1;
-	
+
+//FT_SPLIT FT_SPLIT FT_SPLIT	
 	tet = ft_split(str);
 	while (tet[++j])
 	{
-		ft_putstr("YESSS");
-		ft_putendl(tet[j]);
+		printf("array[%d]: %s\n", j, tet[j]);
+		//ft_putstr("YESSS");
+		//ft_putendl(tet[j]);
 	}
 	return (0);
 

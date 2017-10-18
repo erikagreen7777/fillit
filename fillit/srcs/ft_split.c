@@ -40,7 +40,7 @@ char 	**ft_split(char *str)
 	return (fragments);
 }
 
-
+//check for 
 
 		// if (i < len)
 		// {
