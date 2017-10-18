@@ -26,11 +26,12 @@ int		valid(char *buf)
 	if ((str[len - 1]) == '\n' && (str[len - 2] == '\n'))
 		return(printf("Error: last char isn't a newline\n"));
 	
-	// while (i < len)
-	// {
-
-	// 	i += 21;
-	// }
+	while (i < len)
+	{
+		if (str[i] != '\n')
+			return(printf("Error: No newline at str[20]"));
+		i += 21;
+	}
 
 
 

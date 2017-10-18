@@ -18,11 +18,11 @@ error18 - passes and it shouldn't
 error19 - passes and it shouldn't
 	hashes aren't in the right order (not adjacent)
 
-error20 - passes and it shouldn't
-	no \n separating first and second tet
+FIXED error20 - passes and it shouldn't
+	FIXED no \n separating first and second tet
 
-error21 - passes and it shouldn't
-	no \n separating second and third tet
+FIXED error21 - passes and it shouldn't
+	FIXED no \n separating second and third tet
 
 error22 - passes and it shouldn't
 	5 lines for first tet and 3 for second
