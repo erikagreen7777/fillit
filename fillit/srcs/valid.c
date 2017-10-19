@@ -8,6 +8,7 @@ int		valid(char *buf)
 	size_t i;
 	size_t len;
 	char *str;
+	char	**temp;
 	// int count;
 
 
@@ -58,18 +59,33 @@ int		valid(char *buf)
 
 //FT_SPLIT FT_SPLIT FT_SPLIT	
 	tet = ft_split(str);
-
+	temp = ft_memalloc(sizeof(tet) *  26);
 //FT_ISATET FT_ISATET GOE HERE GOES HERES	
-
+	int k = 0;
 
 	while (tet[j])
 	{
+		temp[k] = ft_trimdots(tet[j]);
+		ft_checktets(temp[k]);
+		printf("%s\n", temp[k]);
 
-		printf("array[%d]: %s\n", j, tet[j]);
+		//printf("array[%d]: %s\n", j, tet[j]);
 		//ft_putstr("YESSS");
 		//ft_putendl(tet[j]);
 		j++;
+		k++;
 	}
+	temp[k] = NULL;
+	// strcmp(s, "whatever") == 0
+	// ft_checktets(temp[k]);
+	// if (!(ft_checktets(temp[k])))
+	// {
+	// 	printf("error, tets aren't valid");
+	// 	return (0);
+	// }
+	// else
+	// 	printf("VALID TESTS");	
+	
 	return (0);
 
 }

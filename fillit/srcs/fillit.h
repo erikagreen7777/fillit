@@ -8,7 +8,7 @@
 # include <stdio.h>
 
 
-# define TETI "####"
+# define TET1 "####"
 # define TET2 "#...#...#...#"
 # define TET3 "##..##"
 # define TET4 "##...##"
@@ -23,8 +23,9 @@
 # define TET13 "###.#"
 # define TET14 "###...#"
 # define TET15 "#...#...##"
-# define TETL19 "#...#..##"
+# define TET16 "#...#..##"
 
+# define TETSIZE 16
 
 
 
@@ -49,6 +50,7 @@ char			*ft_strndup(const char *src, size_t n);
 int				check_4_newlines(char *str);
 int				check_20_newlines(char *str);
 char			*ft_trimdots(char const *s);
+int				ft_checktets(char *s);
 
 
 #endif

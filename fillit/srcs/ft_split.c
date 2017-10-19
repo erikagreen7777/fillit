@@ -32,7 +32,7 @@ char 	**ft_split(char *str)
 		ft_strncpy(fragments[i], &str[j], 16);
 		// ft_putstr("temp: ");
 		// ft_putendl(&temp[i]);
-// **************************************** FIX ME		ft_trimdots(tet[j]);
+		
 		ft_putstr("array: ");
 		ft_putendl(fragments[i]);
 
