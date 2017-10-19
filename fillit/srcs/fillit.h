@@ -16,7 +16,7 @@
 # define TET6 "#...##...#"
 # define TET7 "##.##"
 # define TET8 "###..#"
-# define TET9 "###..#"
+# define TET9 "##...#...#"
 # define TET10 "#..##...#"
 # define TET11 "#...##..#"
 # define TET12 "#..###"
@@ -24,6 +24,11 @@
 # define TET14 "###...#"
 # define TET15 "#...#...##"
 # define TET16 "#...#..##"
+# define TET17 "#...###"
+# define TET18 "#.###"
+# define TET19 ""
+# define TET20 "################"
+# define TET21 "##..#...#"
 
 # define TETSIZE 16
 

@@ -21,7 +21,7 @@ int		valid(char *buf)
 	printf("%zu\n",len);
 
 	//checking the overall length
-	if (len > 416 || len < 20)
+	if (len > 546 || len < 21)
 		return(printf("Error: invalid file (length)\n"));
 	else
 		printf("The length is fine\n");
@@ -66,9 +66,9 @@ int		valid(char *buf)
 	while (tet[j])
 	{
 		temp[k] = ft_trimdots(tet[j]);
-		ft_checktets(temp[k]);
+		if (ft_checktets(temp[k]) == 2)
+			break ;
 		printf("%s\n", temp[k]);
-
 		//printf("array[%d]: %s\n", j, tet[j]);
 		//ft_putstr("YESSS");
 		//ft_putendl(tet[j]);
