@@ -8,6 +8,7 @@ int		valid(char *buf)
 	size_t i;
 	size_t len;
 	char *str;
+	// int count;
 
 
 	i = 20;
@@ -53,15 +54,21 @@ int		valid(char *buf)
 		printf("It's %% 16 = 0\n");
 
 	char **tet;
-	int j = -1;
+	int j = 0;
 
 //FT_SPLIT FT_SPLIT FT_SPLIT	
 	tet = ft_split(str);
-	while (tet[++j])
+
+//FT_ISATET FT_ISATET GOE HERE GOES HERES	
+
+
+	while (tet[j])
 	{
+		
 		printf("array[%d]: %s\n", j, tet[j]);
 		//ft_putstr("YESSS");
 		//ft_putendl(tet[j]);
+		j++;
 	}
 	return (0);
 

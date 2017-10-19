@@ -30,16 +30,18 @@ char 	**ft_split(char *str)
 		fragments[i] = ft_strnew(16);
 		ft_strncpy(fragments[i], &str[j], 16);
 		ft_putstr("array: ");
-
 		ft_putendl(fragments[i]);
+		printf("%s\n", ft_trimdots(fragments[i]));
 		len -= 16;
 		i++;
 		j += 16;
+
 	}
 	fragments[i] = NULL;
-	return (fragments);
-}
+	
 
+	 return (fragments);
+}
 //check for 
 
 		// if (i < len)
