@@ -64,7 +64,7 @@ int		valid(char *buf)
 
 	while (tet[j])
 	{
-		
+
 		printf("array[%d]: %s\n", j, tet[j]);
 		//ft_putstr("YESSS");
 		//ft_putendl(tet[j]);
