@@ -10,25 +10,20 @@ int		valid(char *buf)
 	char *str;
 	char	**temp;
 	t_tet_frag *tetromino = NULL;
-	// int count;
-
 
 	i = 20;
-
 	str = buf;
 	len = ft_strlen(str);
 
-
 	printf("%zu\n",len);
-
 	//checking the overall length
 	if (len > 546 || len < 19)
 		return(printf("Error: invalid file (length)\n"));
 	else
 		printf("The length is fine\n");
 	ft_putendl(str);	
-
 	
+
 	if ((str[len - 1]) == '\n' && (str[len - 2] == '\n'))
 		return(printf("Error: last char isn't a newline\n"));
 	
@@ -89,26 +84,6 @@ int		valid(char *buf)
 	char	**new_g;
 	new_g = new_grid(20);
 	print_grid(new_g, 20);
-
-	// strcmp(s, "whatever") == 0
-	// ft_checktets(temp[k]);
-	// if (!(ft_checktets(temp[k])))
-	// {
-	// 	printf("error, tets aren't valid");
-	// 	return (0);
-	// }
-	// else
-	// 	printf("VALID TESTS");	
-	
 	return (0);
 
 }
-
-
-	// size_t counter;
-	// counter = 20;
-	// char **str;
-	// str = &argv[1];
-//	printf("%s\n", str);
-//	printf("%s\n", str);
-	// printf("%s\n", );
