@@ -8,27 +8,27 @@
 # include <stdio.h>
 
 
-# define TET1 "####"
-# define TET2 "#...#...#...#"
-# define TET3 "##..##"
-# define TET4 "##...##"
-# define TET5 "#..##..#"
-# define TET6 "#...##...#"
-# define TET7 "##.##"
-# define TET8 "###..#"
-# define TET9 "##...#...#"
-# define TET10 "#..##...#"
-# define TET11 "#...##..#"
-# define TET12 "#..###"
-# define TET13 "###.#"
-# define TET14 "###...#"
-# define TET15 "#...#...##"
-# define TET16 "#...#..##"
-# define TET17 "#...###"
-# define TET18 "#.###"
+# define TET1 "####"  //TET I 1
+# define TET2 "#...#...#...#" //TET I 2
+# define TET3 "##..##" // TET 0
+# define TET4 "##...##" // TET Z 1
+# define TET5 "#..##..#" //TET Z 2
+# define TET6 "#...##...#" // TET Z 3
+# define TET7 "##.##" //TET Z 4
+# define TET8 "###..#" //TET T 1
+# define TET9 "##...#...#" // WHAT IS THIS ONE?
+# define TET10 "#..##...#" // TET T 2
+# define TET11 "#...##..#" // TET Z 3
+# define TET12 "#..###" // TET Z 4
+# define TET13 "###.#" //  TET L 1
+# define TET14 "###...#" //TET L 2
+# define TET15 "#...#...##" // TET L 3
+# define TET16 "#...#..##" // TET L 4
+# define TET17 "#...###" // TET L 5
+# define TET18 "#.###" // TET L 6
 # define TET19 ""
 # define TET20 "################"
-# define TET21 "##..#...#"
+# define TET21 "##..#...#" // TET L 7
 
 # define TETSIZE 16
 
