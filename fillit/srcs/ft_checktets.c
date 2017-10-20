@@ -19,7 +19,7 @@ int		ft_checktets(char *s)
 	}
 	else
 	{
-		ft_putstr("YES: ");
+		// ft_putstr("This TET is a valid shape");
 		return (0) ;
 	}
 }

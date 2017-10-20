@@ -9,6 +9,7 @@ int		valid(char *buf)
 	size_t len;
 	char *str;
 	char	**temp;
+	t_tet_frag *tetromino = NULL;
 	// int count;
 
 
@@ -57,30 +58,38 @@ int		valid(char *buf)
 	if (dothashthing(str) == 2)
 		return (0);
 
-
 	char **tet;
 	int j = 0;
-
+	tetromino = ft_memalloc(sizeof(t_tet_frag));
 //FT_SPLIT FT_SPLIT FT_SPLIT	
 	tet = ft_split(str);
-	temp = ft_memalloc(sizeof(tet) *  26);
-
+	temp = ft_memalloc(sizeof(tet) *  MAXTETS);
 //FT_ISATET FT_ISATET GOE HERE GOES HERES	
 	int k = 0;
+	// int e = 0;
 
 	while (tet[j])
 	{
 		temp[k] = ft_trimdots(tet[j]);
 		if (ft_checktets(temp[k]) == 2)
 			break ;
-		printf("%s\n", temp[k]);
-		//printf("array[%d]: %s\n", j, tet[j]);
-		//ft_putstr("YESSS");
-		//ft_putendl(tet[j]);
+		// t_tet_frag.array[e] = temp[k];
+		// printf("%s\n", temp[k]);
+
 		j++;
 		k++;
 	}
 	temp[k] = NULL;
+	tetromino->array = temp;
+	while (k >= 0)
+	{
+		printf("tetromino->array[%d]: %s\n", k, tetromino->array[k]);
+		k--;
+	}
+	char	**new_g;
+	new_g = new_grid(20);
+	print_grid(new_g, 20);
+
 	// strcmp(s, "whatever") == 0
 	// ft_checktets(temp[k]);
 	// if (!(ft_checktets(temp[k])))

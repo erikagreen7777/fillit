@@ -14,7 +14,7 @@ SRCDIR = ./srcs/
 LIBDIR = ./libft/
 FILE_1 = main valid mod ft_remove_newline check_20_new
 FILE_2 = ft_split ft_list_assign ft_strndup check_4_new
-FILE_3 = ft_trimdots ft_checktets dothashthing
+FILE_3 = ft_trimdots ft_checktets dothashthing new_grid print_grid
 # FILE_4 = next_piece map_reset
 FILES = $(FILE_1) $(FILE_2) $(FILE_3)
 # $(FILE_2) $(FILE_3) $(FILE_4)

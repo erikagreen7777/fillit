@@ -31,14 +31,12 @@
 # define TET21 "##..#...#" // TET L 7
 
 # define TETSIZE 16
-
-
-
-
+# define MAXTETS 26
+# define MINGRID 2
 
 typedef struct		s_tet_frag
 {
-	char				*array;
+	char				**array;
 	struct s_tet_frag	*next;
 }					t_tet_frag;
 
@@ -57,5 +55,7 @@ int				check_20_newlines(char *str);
 char			*ft_trimdots(char const *s);
 int				ft_checktets(char *s);
 int				dothashthing(char *str);
+char 			**new_grid(int size);
+void			print_grid(char **grid_to_print, int size);
 
 #endif
