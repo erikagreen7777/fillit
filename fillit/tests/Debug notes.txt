@@ -3,20 +3,18 @@ Debug notes
 FIXED error3 - passes and it shouldn't
 	FIXED \n at the end?
 
-*error4 - seg fault
-	not all hashes are present and adjacent
+FIXEDerror4 - seg fault
+	FIXEDnot all hashes are present and adjacent
 
-INVALID TETROMINO *error7 - passes and it shouldn't
-	hashes aren't in the right order (not adjacent)
+FIXEDerror7 - passes and it shouldn't
+	FIXEDhashes aren't in the right order (not adjacent)
 
-MAYBE?*error17 - passes and it shouldn't
-	hashes aren't in the right order (not adjacent)
-		LOOK FOR: invalid tetromino
-
-KIND OF FIXED*error18 - passes and it shouldn't
-	hashes aren't in the right order (not adjacent)
-		LOOK FOR: invalid tetromino
-
+FIXEDerror17 - passes and it shouldn't
+	FIXEDhashes aren't in the right order (not adjacent)
+		
+FIXED*error18 - passes and it shouldn't
+	FIXEDhashes aren't in the right order (not adjacent)
+		
 FIXEDerror19 - passes and it shouldn't
 	FIXEDhashes aren't in the right order (not adjacent)
 
@@ -35,3 +33,4 @@ FIXEDerror24 - passes and it shouldn't
 
 FIXEDerror26 - passes and it shouldn't
 	FIXEDempty tet (no hashes)
+

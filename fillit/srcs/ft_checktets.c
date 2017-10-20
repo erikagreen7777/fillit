@@ -15,7 +15,7 @@ int		ft_checktets(char *s)
 		&& (!(ft_strequ(s, TET16))) && (!(ft_strequ(s, TET17))) && (!(ft_strequ(s, TET18))) && (!ft_strequ(s, TET21)))
 	{
 		ft_putstr("invalid tetromino NO: ");
-		return (0);
+		return (2);
 	}
 	else
 	{

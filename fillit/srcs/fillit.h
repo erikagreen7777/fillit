@@ -56,6 +56,6 @@ int				check_4_newlines(char *str);
 int				check_20_newlines(char *str);
 char			*ft_trimdots(char const *s);
 int				ft_checktets(char *s);
-
+int				dothashthing(char *str);
 
 #endif

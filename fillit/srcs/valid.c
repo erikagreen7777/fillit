@@ -21,7 +21,7 @@ int		valid(char *buf)
 	printf("%zu\n",len);
 
 	//checking the overall length
-	if (len > 546 || len < 21)
+	if (len > 546 || len < 19)
 		return(printf("Error: invalid file (length)\n"));
 	else
 		printf("The length is fine\n");
@@ -54,12 +54,17 @@ int		valid(char *buf)
 	else 
 		printf("It's %% 16 = 0\n");
 
+	if (dothashthing(str) == 2)
+		return (0);
+
+
 	char **tet;
 	int j = 0;
 
 //FT_SPLIT FT_SPLIT FT_SPLIT	
 	tet = ft_split(str);
 	temp = ft_memalloc(sizeof(tet) *  26);
+
 //FT_ISATET FT_ISATET GOE HERE GOES HERES	
 	int k = 0;
 

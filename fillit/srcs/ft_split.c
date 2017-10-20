@@ -12,16 +12,19 @@ char 	**ft_split(char *str)
 	size_t i = 0;
 
 	// If none of them are # or .
-	while (i < len)
-	{
-		if (str[i] != '#' && str[i] != '.')
-		{
-			printf("INVALID char: %c\n", str[i]);
-			return (0);
-		}
-		printf("This char is valid: %zu %c\n", i, str[i]);
-		i++;
-	}
+//NICK'S DOT/HASH THING GOES HERE
+
+
+	// while (i < len)
+	// {
+	// 	if ((str[i] != '#' && str[i] != '.') || (str[i] == ' '))
+	// 	{
+	// 		printf("INVALID char: %c\n", str[i]);
+	// 		return (2);
+	// 	}
+	// 	printf("This char is valid: %zu %c\n", i, str[i]);
+	// 	i++;
+	// }
 
 	// Chop up the lines
 	i = 0;
