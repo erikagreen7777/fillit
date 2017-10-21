@@ -57,5 +57,6 @@ int				ft_checktets(char *s);
 int				dothashthing(char *str);
 char 			**new_grid(int size);
 void			print_grid(char **grid_to_print, int size);
+int				backtrack(char **grid, char **new_g, int size);
 
 #endif

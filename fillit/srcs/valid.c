@@ -81,6 +81,8 @@ int		valid(char *buf)
 		printf("tetromino->array[%d]: %s\n", k, tetromino->array[k]);
 		k--;
 	}
+
+	
 	char	**new_g;
 	new_g = new_grid(20);
 	print_grid(new_g, 20);
