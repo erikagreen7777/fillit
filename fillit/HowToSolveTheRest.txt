@@ -1,0 +1,13 @@
+Solver function:
+
+1. Create new box 
+2. Backtracker
+	y then x in double loop;
+	if it's possible to place the tet, then start at 0, 0;
+	if not, keep iterating (x + 1?);
+	temp = recursive backtrack;
+	clean just the last tet if you can't find anything;
+
+	If the whole thing is false, increase box size by 1. 
+
+	When you place the tet, assign the letter then. 
