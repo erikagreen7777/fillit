@@ -3,16 +3,16 @@
 
 void	print_grid(char **grid, int size)
 {
-	int x;
-	int	y;
+	int row;
+	int	col;
 
-	y = -1;
-	while (++y < size)
+	col = -1;
+	while (++col < size)
 	{
-		x = -1;
-		while (++x < size)
-			ft_putchar(grid[y][x]);
-		if (y + 1 < size)
+		row = -1;
+		while (++row < size)
+			ft_putchar(grid[col][row]);
+		if (col + 1 < size)
 			ft_putchar('\n');
 	}
 }

@@ -1,15 +1,21 @@
-/* void	place_tets(tet, grid size)
+/* void	place_tets(t_tet_frag tetromino.array, char **grid, int tetcount, int size)
 // {
-		grid
-		row[0]
-		col[0]
-		i
-		j
+		int row = 0;
+		int col = 0;
+		int i = 0;
+		int j = 0;
+		char letter = tetcount + 'A';
 
-		while grid[j] != '\n'
-			put TET2[i] at grid[0][0]
-			if (grd[j] == '\n')
-				put TET2 at grid[row + 1][0]
-			TET2[i]++	
+		while (tetromino->array[i] == '#') && tetcount
+			tetromino->array = letter;
+		if (tetromino.array == COL1TETS++), 
+			ft_putchar(tetromino->array) at grid[0][1];
+		while (grid[j]++ != '\n')
+		{
+				ft_putchar(tetromino->array) at grid[0][0];
+				col++;
+		}
+		if (col[] == '\n')
+				row + 1;
  }
  */
