@@ -37,7 +37,6 @@
 typedef struct		s_tet_frag
 {
 	char				**array;
-	struct s_tet_frag	*next;
 }					t_tet_frag;
 
 
@@ -58,6 +57,6 @@ int				dothashthing(char *str);
 char 			**new_grid(int size);
 void			print_grid(char **grid_to_print, int size);
 int				backtrack(char **grid, char **new_g, int size);
-void			place_tets(t_tet_frag tetromino.array, char **grid, int tetcount, int size);
+void			place_tets(t_tet_frag tetromino, char **grid, int tetcount, int size);
 
 #endif
