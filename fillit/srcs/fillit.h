@@ -12,20 +12,20 @@
 # define TET2 "#...#...#...#" //TET I 2
 # define TET3 "##..##" // TET 0
 # define TET4 "##...##" // TET Z 1
-# define TET5 "#..##..#" //TET Z 2
+# define TET5 "#..##..#" //TET Z 2 1
 # define TET6 "#...##...#" // TET Z 3
-# define TET7 "##.##" //TET Z 4
+# define TET7 "##.##" //TET Z 4 1
 # define TET8 "###..#" //TET T 1
-# define TET9 "##...#...#" // WHAT IS THIS ONE?
-# define TET10 "#..##...#" // TET T 2
-# define TET11 "#...##..#" // TET Z 3
-# define TET12 "#..###" // TET Z 4
+# define TET9 "##...#...#" // tet l 8
+# define TET10 "#..##...#" // TET T 2 1
+# define TET11 "#...##..#" // TET T 3
+# define TET12 "#..###" // TET T 4 1
 # define TET13 "###.#" //  TET L 1
 # define TET14 "###...#" //TET L 2
 # define TET15 "#...#...##" // TET L 3
-# define TET16 "#...#..##" // TET L 4
+# define TET16 "#...#..##" // TET L 4 1
 # define TET17 "#...###" // TET L 5
-# define TET18 "#.###" // TET L 6
+# define TET18 "#.###" // TET L 6 1
 # define TET19 ""
 # define TET20 "################"
 # define TET21 "##..#...#" // TET L 7
@@ -58,5 +58,6 @@ int				dothashthing(char *str);
 char 			**new_grid(int size);
 void			print_grid(char **grid_to_print, int size);
 int				backtrack(char **grid, char **new_g, int size);
+void			place_tets(t_tet_frag tetromino.array, char **grid, int tetcount, int size);
 
 #endif

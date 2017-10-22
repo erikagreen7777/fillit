@@ -12,7 +12,7 @@
 NAME = fillit
 SRCDIR = ./srcs/
 LIBDIR = ./libft/
-FILE_1 = main valid mod ft_remove_newline check_20_new
+FILE_1 = main valid mod ft_remove_newline check_20_new place_tets
 FILE_2 = ft_split ft_list_assign ft_strndup check_4_new backtrack
 FILE_3 = ft_trimdots ft_checktets dothashthing new_grid print_grid
 # FILE_4 = next_piece map_reset
