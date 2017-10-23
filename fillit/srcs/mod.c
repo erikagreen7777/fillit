@@ -1,3 +1,6 @@
+#include "libft.h"
+#include "fillit.h"
+
 int	ft_ismod(int a, int b)
 {
 	int		remainder;

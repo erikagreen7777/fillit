@@ -56,11 +56,13 @@ int		valid(char *buf)
 	char **tet;
 	int j = 0;
 	tetromino = ft_memalloc(sizeof(t_tet_frag));
+	// tetromino->array = ft_memalloc(sizeof(str) * MAXTETS);
 //FT_SPLIT FT_SPLIT FT_SPLIT	
 	tet = ft_split(str);
 	temp = ft_memalloc(sizeof(tet) *  MAXTETS);
 //FT_ISATET FT_ISATET GOE HERE GOES HERES	
 	int k = 0;
+	tetromino->count = 0;
 	// int e = 0;
 
 	while (tet[j])
@@ -70,22 +72,28 @@ int		valid(char *buf)
 			break ;
 		// t_tet_frag.array[e] = temp[k];
 		// printf("%s\n", temp[k]);
-
+		tetromino->count++;
 		j++;
 		k++;
 	}
 	temp[k] = NULL;
 	tetromino->array = temp;
+	printf("tetcount = %d\n", tetromino->count);
 	while (k >= 0)
 	{
 		printf("tetromino->array[%d]: %s\n", k, tetromino->array[k]);
 		k--;
 	}
-
+	
 	
 	char	**new_g;
-	new_g = new_grid(20);
-	print_grid(new_g, 20);
+	new_g = new_grid(MINGRID);
+	//print_grid(new_g, MINGRID);
+	place_tets(tetromino, new_g);
+	// backtrack(*tetromino->array, tetcount, MINGRID);
+
+
+	// printf("Strlen of TET2 is: %lu", strlen(TET2));
 	return (0);
 
 }
