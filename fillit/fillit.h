@@ -32,14 +32,13 @@
 
 # define TETSIZE 16
 # define MAXTETS 26
-# define MINGRID 4
+# define MINGRID 2
 
 typedef struct		s_tet_frag
 {
-	int				count;
-	int				i;
-	char			**array;
+	char				**array;
 }					t_tet_frag;
+
 
 
 int				valid(char *argv);
@@ -57,10 +56,7 @@ int				ft_checktets(char *s);
 int				dothashthing(char *str);
 char 			**new_grid(int size);
 void			print_grid(char **grid_to_print, int size);
-int				backtrack(char **grid, int tetcount, int size);
-char			*place_tets(t_tet_frag *tetromino, char **new_g);
-void			del_tet(char **new_g, int tetcount);
-int				ft_TET8(t_tet_frag tetromino, int row, int col);
-int				ft_TET7(t_tet_frag tetromino, int row, int col);
+int				backtrack(char **grid, char **new_g, int size);
+void			place_tets(t_tet_frag tetromino, char **grid, int tetcount, int size);
 
 #endif
