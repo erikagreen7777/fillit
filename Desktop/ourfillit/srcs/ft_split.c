@@ -6,7 +6,7 @@
 /*   By: egreen <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/25 08:45:29 by egreen            #+#    #+#             */
-/*   Updated: 2017/10/25 08:47:29 by egreen           ###   ########.fr       */
+/*   Updated: 2017/10/26 13:47:58 by egreen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,6 @@ char	**ft_split(char *str)
 	{
 		fragments[i] = ft_strnew(16);
 		ft_strncpy(fragments[i], &str[j], 16);
-		//ft_putstr("array: ");
-		//ft_putendl(fragments[i]);
 		len -= 16;
 		i++;
 		j += 16;
