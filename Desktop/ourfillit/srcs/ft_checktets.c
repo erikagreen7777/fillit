@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: egreen <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/10/25 08:51:06 by egreen            #+#    #+#             */
-/*   Updated: 2017/10/25 08:58:36 by egreen           ###   ########.fr       */
+/*   Created: 2017/10/26 13:17:03 by egreen            #+#    #+#             */
+/*   Updated: 2017/10/26 13:17:06 by egreen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,9 +33,5 @@ int		ft_checktets(char *s)
 		ft_putstr("invalid tetromino NO: ");
 		return (2);
 	}
-	// else
-	// {
-	// 	ft_putstr("This TET is a valid shape");
 	return (0);
-	//}
 }
