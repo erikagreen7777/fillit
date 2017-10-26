@@ -6,7 +6,7 @@
 /*   By: nwang <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/24 15:15:18 by nwang             #+#    #+#             */
-/*   Updated: 2017/10/24 22:15:53 by nwang            ###   ########.fr       */
+/*   Updated: 2017/10/26 13:27:23 by egreen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int		which_clear_tet(char *tet, char **new_g, int *yx)
 
 	y = yx[0];
 	x = yx[1];
-	if (ft_strequ(tet, TET1) )
+	if (ft_strequ(tet, TET1))
 		ft_cleartet1(new_g, x, y);
 	if (ft_strequ(tet, TET2))
 		ft_cleartet2(new_g, x, y);
@@ -37,12 +37,11 @@ int		which_clear_tet(char *tet, char **new_g, int *yx)
 		ft_cleartet8(new_g, x, y);
 	if (ft_strequ(tet, TET9))
 		ft_cleartet9(new_g, x, y);
-	return (which_clear_tet2(tet, new_g, yx));
+	return (which_clear_tet2(tet, new_g, yx, y));
 }
 
-int		which_clear_tet2(char *tet, char **new_g, int *yx)
+int		which_clear_tet2(char *tet, char **new_g, int *yx, int y)
 {
-	int y;
 	int x;
 
 	y = yx[0];
@@ -68,5 +67,4 @@ int		which_clear_tet2(char *tet, char **new_g, int *yx)
 	if (ft_strequ(tet, TET21))
 		ft_cleartet19(new_g, x, y);
 	return (0);
-	// if it returns 2 then it's an error because it couldn't place any of them. 
 }
