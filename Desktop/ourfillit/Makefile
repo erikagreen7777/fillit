@@ -12,16 +12,14 @@
 NAME = fillit
 SRCDIR = ./srcs/
 LIBDIR = ./libft/
-FILE_1 = main mod validswitch ft_remove_newline 
-# check_20_new ft_list_assign check_4_new backtrack del_tet
+FILE_1 = main mod validswitch ft_remove_newline tet_all
 FILE_2 = ft_split ft_strndup solver which_tet which_clear_tet
 FILE_3 = ft_trimdots ft_checktets dothashthing new_grid print_grid
-FILE_4 = tet_all tet_length
+FILE_4 = tet_length ft_placetet16 ft_placetet17 ft_placetet18 ft_placetet19 
 FILE_5 = ft_placetet1 ft_placetet2 ft_placetet3 ft_placetet4 ft_placetet5
 FILE_6 = ft_placetet6 ft_placetet7 ft_placetet8 ft_placetet9 ft_placetet10
 FILE_7 = ft_placetet11 ft_placetet12 ft_placetet13 ft_placetet14 ft_placetet15
-FILE_8 = ft_placetet16 ft_placetet17 ft_placetet18 ft_placetet19 
-FILES = $(FILE_1) $(FILE_2) $(FILE_3) $(FILE_4) $(FILE_5) $(FILE_6) $(FILE_7) $(FILE_8)
+FILES = $(FILE_1) $(FILE_2) $(FILE_3) $(FILE_4) $(FILE_5) $(FILE_6) $(FILE_7)
 HEADERS = libft.h fillit.h
 SRCS = $(addprefix $(SRCDIR), $(patsubst %, %.c, $(FILES)))
 OBJS = $(patsubst %, %.o, $(FILES))

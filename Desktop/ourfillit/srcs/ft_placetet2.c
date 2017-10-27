@@ -6,7 +6,7 @@
 /*   By: nwang <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/23 16:01:43 by nwang             #+#    #+#             */
-/*   Updated: 2017/10/24 21:40:27 by nwang            ###   ########.fr       */
+/*   Updated: 2017/10/26 16:37:33 by nwang            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,13 @@ int		ft_checktet2(char **g, int *yx)
 	int x;
 
 	y = yx[0];
-	x = yx[1];	
+	x = yx[1];
 	i = 0;
 	if (yx[2] - y < 4)
 		return (0);
 	while (i < 4)
 	{
-		if(!(g[y][x] == '.'))
+		if (!(g[y][x] == '.'))
 			return (0);
 		y++;
 		i++;
@@ -41,8 +41,7 @@ int		ft_placetet2(char **g, int *yx, char c)
 	int x;
 
 	y = yx[0];
-	x = yx[1];	
-
+	x = yx[1];
 	i = 0;
 	if (ft_checktet2(g, yx) == 0)
 		return (0);
@@ -58,7 +57,7 @@ int		ft_placetet2(char **g, int *yx, char c)
 void	ft_cleartet2(char **g, int x, int y)
 {
 	int i;
-	
+
 	i = 0;
 	while (i < 4)
 	{

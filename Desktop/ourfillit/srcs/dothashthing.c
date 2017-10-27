@@ -21,7 +21,7 @@ int		dothashthing(char *str)
 	len = ft_strlen(str);
 	while (i < len)
 	{
-		if ((str[i] != '#' && str[i] != '.') || (str[i] == ' '))
+		if ((str[i] != '#' && str[i] != '.'))
 		{
 			printf("INVALID char: %c\n", str[i]);
 			return (2);

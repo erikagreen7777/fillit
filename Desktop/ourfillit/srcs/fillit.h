@@ -15,6 +15,7 @@
 # include <fcntl.h>
 # include <unistd.h>
 # include <stdlib.h>
+# include <stdio.h>
 # include "libft.h"
 # define TET1 "####"
 # define TET2 "#...#...#...#"
@@ -45,7 +46,7 @@ typedef struct	s_tet_frag
 {
 	int			count;
 	int			size;
-	cha			**array;
+	char		**array;
 }				t_tet_frag;
 int				validswitch(char *buf, t_tet_frag *tetromino);
 int				ft_ismod(int a, int b);
